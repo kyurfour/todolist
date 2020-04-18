@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		1055B75B244926D5006E83CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055B75A244926D5006E83CA /* AppDelegate.swift */; };
 		1055B75D244926D5006E83CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055B75C244926D5006E83CA /* SceneDelegate.swift */; };
-		1055B75F244926D5006E83CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055B75E244926D5006E83CA /* ViewController.swift */; };
 		1055B762244926D5006E83CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1055B760244926D5006E83CA /* Main.storyboard */; };
 		1055B765244926D5006E83CA /* todolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1055B763244926D5006E83CA /* todolist.xcdatamodeld */; };
 		1055B767244926D6006E83CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1055B766244926D6006E83CA /* Assets.xcassets */; };
 		1055B76A244926D6006E83CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1055B768244926D6006E83CA /* LaunchScreen.storyboard */; };
+		1055B77224492759006E83CA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055B77124492759006E83CA /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1055B757244926D5006E83CA /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1055B757244926D5006E83CA /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1055B75A244926D5006E83CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1055B75C244926D5006E83CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1055B75E244926D5006E83CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1055B761244926D5006E83CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1055B764244926D5006E83CA /* todolist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = todolist.xcdatamodel; sourceTree = "<group>"; };
 		1055B766244926D6006E83CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1055B769244926D6006E83CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1055B76B244926D6006E83CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1055B77124492759006E83CA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		1055B758244926D5006E83CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1055B757244926D5006E83CA /* todolist.app */,
+				1055B757244926D5006E83CA /* To Do List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +58,9 @@
 		1055B759244926D5006E83CA /* todolist */ = {
 			isa = PBXGroup;
 			children = (
+				1055B77124492759006E83CA /* TableViewController.swift */,
 				1055B75A244926D5006E83CA /* AppDelegate.swift */,
 				1055B75C244926D5006E83CA /* SceneDelegate.swift */,
-				1055B75E244926D5006E83CA /* ViewController.swift */,
 				1055B760244926D5006E83CA /* Main.storyboard */,
 				1055B766244926D6006E83CA /* Assets.xcassets */,
 				1055B768244926D6006E83CA /* LaunchScreen.storyboard */,
@@ -87,7 +87,7 @@
 			);
 			name = todolist;
 			productName = todolist;
-			productReference = 1055B757244926D5006E83CA /* todolist.app */;
+			productReference = 1055B757244926D5006E83CA /* To Do List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,10 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1055B75F244926D5006E83CA /* ViewController.swift in Sources */,
 				1055B75B244926D5006E83CA /* AppDelegate.swift in Sources */,
 				1055B75D244926D5006E83CA /* SceneDelegate.swift in Sources */,
 				1055B765244926D5006E83CA /* todolist.xcdatamodeld in Sources */,
+				1055B77224492759006E83CA /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +291,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25AESJX4K5;
 				INFOPLIST_FILE = todolist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyurfour.todolist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To Do List";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,12 +310,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25AESJX4K5;
 				INFOPLIST_FILE = todolist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyurfour.todolist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To Do List";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
